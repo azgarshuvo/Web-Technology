@@ -1,0 +1,20 @@
+<?php
+session_start();
+if($_REQUEST["buildingData"]=="")
+{
+	$_SESSION["buildingData"]="All";
+}
+else{
+$_SESSION["buildingData"]=$_REQUEST["buildingData"];}
+unset($_SESSION['newBuildingName']);
+unset($_SESSION['newBuildingId']);
+unset($_SESSION['newBuildingAddress']);
+unset($_SESSION["allFlatDetailsInfo"]);
+unset($_SESSION['tenantMonthlyPaymentId']);
+unset($_SESSION["tenantBuildingForm"]);
+unset($_SESSION["tenantFlatForm"]);
+unset($_SESSION["tenantFlatRentForm"]);
+unset($_SESSION["NewTenantId"]);
+unset($_SESSION["tenantFlatIdForm"]);
+header("Location:homeOwnerPage.php");
+?>

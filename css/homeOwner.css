@@ -1,0 +1,954 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+h1,hr
+{
+	text-align: center;
+	font-size: 20;
+	color: #55acee;
+	font-family: "Times New Roman";
+	border: 5px;
+}
+.homeOwner {
+  position: relative;
+  height: 100%;
+  background-image: url("Home.jpg");
+  background-size: cover;
+  overflow:hidden;
+  font-family: "Times New Roman";
+}
+.Navigation{
+	height: 50px;
+    padding:0%;
+    top :7%;
+	margin: 1.5%;
+	left:-10px;
+	position: absolute;
+}
+
+.Navigation li 	{
+	height: auto;
+	width: 170px;
+	float: left;
+	text-align: center;
+	list-style: none;
+	font:17px ;
+	padding: 0;
+	margin: 0;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+    margin-left:10px;
+}
+
+.Navigation a{							
+	padding:10px;
+	text-decoration: none; 
+	color:#333;
+	text-shadow: 0 1px #fff;
+	display: block;
+}
+.Navigation li ul{
+	display: none;
+	height: auto;									
+	margin-left: -10px;
+	padding: 0;		
+}				
+
+.Navigation li:hover ul{
+	display: block;
+}
+
+.navbar li ul li {
+	background-color:#eee;
+  	border: 1px solid #ccc;
+} 
+
+.Navigation li:hover, a:hover {
+	 background: #e8e8e8;
+}
+.tableView
+{
+	position:absolute;
+    top: 28%;
+    left: .1%;
+    font:12px ;
+    margin: 3px;
+    width: 99.5%;
+}
+.flatsTableView
+{
+	position:absolute;
+    top: 19%;
+    left: .5%;
+    font:12px ;
+    margin: 10px;
+    width: 97.5%;
+	display:none;
+}
+.buildingsTableView
+{
+	position:absolute;
+    top: 18%;
+    left: .5%;
+    font:12px ;
+    margin: 10px;
+    width: 97.5%;
+	display:none;
+}
+table {
+    border-collapse:5px;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+th{
+	border: 2px solid black;
+}
+tr:nth-child(odd){background-color: #C4C162}
+tr:nth-child(even){background-color:#62C490}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+#buttons {
+  text-align: center;
+}
+.btn {
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 12px;
+  margin: 1px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+.blue {
+  background-color: #55acee;
+}
+.green {
+  background-color: #2ecc71;
+}
+.red {
+  background-color: #e74c3c;
+ }
+.purple {
+  background-color: #9b59b6;
+}
+.searchRow {
+  height: 50px;
+  padding-top: 1rem;
+  font-size: 14px;
+  position:absolute;
+  left:70%;
+  top:7.2%;
+  width: 50%;
+}
+.searchInput {
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  font-size: 14px;
+  color: black;
+  background :transparent;
+  margin: 0.5%;
+  padding: 16px 25px;
+}
+.searchButton {
+ border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 14px;
+  width: 20%;
+  margin: 1px;
+  color: #fff;
+  position: absolute;
+  background: #39A83D;
+}
+.buildingInfo {
+	height: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position:absolute;
+  left:2%;
+  top:20%;
+  width:96%;
+}
+.h2
+{
+	font-size: 15px;
+}
+.buildingData
+{
+	position: absolute;
+  width: 15%;
+  font-size: 17px;
+  background :transparent;
+   left:20%;
+  top:-5px;
+  height: 80%;
+}
+.searchForm
+{
+	display: inline-block;
+}
+.buildingDateButton
+{
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 14px;
+  width: 29%;
+  margin: 1px;
+  position: absolute;
+  background: #39A83D;
+  top:-6px;
+  left: 38.5%;
+}
+
+.profileInfo 
+{
+  height: 50px;
+  position:absolute;
+  left:2%;
+  top:25%;
+  width:96%;
+  font-size:20px;
+  display:none;
+}
+.userId
+{
+  height: 50px;
+  position:absolute;
+  left:20%;
+  top:0%;
+  width:25%;
+}
+.fName
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:90%;
+  width:25%;
+	
+	
+}
+.lName
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:185%;
+  width:25%;
+}
+.dob
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:280%;
+  width:50%;
+}
+.gender
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:370%;
+  width:50%;
+}
+.email
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:457%;
+  width:50%;
+}
+.phoneNo
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:549%;
+  width:50%;
+}
+.address
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:641%;
+  width:50%;
+}
+.NID
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:735%;
+  width:50%;
+}
+.regiDate
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:825%;
+  width:50%;
+}
+
+.image
+{
+  position: absolute;
+  width:200px;
+  font-size: 17px;
+  background :transparent;
+  left:52%;
+  top:-4px;
+  height:200px;
+}
+.updateButton
+{
+  position: absolute;
+  left:51.5%;
+  top:745%;
+  height: 70%;
+  width:16%;
+  background: #55acee;
+  font-size: 1.0rem;
+  border-radius: 0.5px;
+  cursor: pointer;
+}
+.updateProfileInfo 
+{
+  height: 70px;
+  position:absolute;
+  left:2%;
+  top:25%;
+  width:96%;
+  font-size:20px;
+  display:none;
+}
+.updateConfirmButton
+{
+  position: absolute;
+  left:52%;
+  top:380px;
+  height: 50%;
+  width:15.5%;
+  background: #55acee;
+  font-size: 1.0rem;
+  border-radius: 0.5px;
+  cursor: pointer;
+}
+.updateuserId
+{
+  height: 50px;
+  position:absolute;
+  left:20%;
+  top:-5%;
+  width:25%;
+}
+.updatefName
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:50%;
+  width:25%;
+	
+}
+.updatelName
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:120%;
+  width:25%;
+}
+.updatedob
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:190%;
+  width:25%;
+}
+.updategender
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:265%;
+  width:25%;
+}
+.updateemail
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:311%;
+  width:25%;
+}
+.updatephoneNo
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:381%;
+  width:25%;
+}
+.updateaddress
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:450%;
+  width:25%;
+}
+.updateNID
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:531%;
+  width:25%;
+}
+.updateregiDate
+{
+  height: 40px;
+  position:absolute;
+  left:20%;
+  top:585%;
+  width:25%;
+}
+.updateimage
+{
+  position: absolute;
+  width:200px;
+  font-size: 17px;
+  background :transparent;
+  left:52%;
+  top:-4px;
+  height:200px;
+}
+.demoes {
+  position: absolute;
+  top: 2%;
+  left: 37%;
+  margin-left: -5rem;
+  margin-top: 2.5rem;
+  width: 32rem;
+  height: 34rem;
+  overflow: visible;
+  display:none;
+}
+.ques {
+  position: relative;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%);
+  background: linear-gradient(to bottom, rgba(14, 135, 187, 0.8) 10%, rgba(255, 255, 100, 0.7) 100%);
+  
+}
+.securityQuestionForm {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 1.0rem 2.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.questionRow {
+  height: 4rem;
+  padding-top: 1.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.questionInput {
+  display: inline-block;
+  width: 15rem;
+  height: 100%;
+  padding-left: 1.0rem;
+  font-size: 1.3rem;
+  background: transparent;
+  color: black;
+}
+.questionSubmit {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  margin: 1.0rem  0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #FF3366;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.changeSecurityQuestion {
+  position: absolute;
+  top: 4rem;
+  left: 1.2rem;
+  width: 30rem;
+  height: 2.0rem;
+  font-size: 3.0rem;
+	font-family: Times New Roman;
+	text-align: center;
+  color:rgba(240, 230, 107, 0.8);
+  cursor: none;
+}
+.securityquestion
+{
+  border: transparent;
+  color: black;
+  background:transparent;
+  font-size: 1.1rem;
+}
+
+.demo {
+  position: absolute;
+  top: 3%;
+  left: 37%;
+  margin-left: -5rem;
+  margin-top: 3rem;
+  width: 32rem;
+  height: 30rem;
+  overflow: visible;
+  display:none;
+}
+.demoTenantAdd {
+  position: absolute;
+  top: -5%;
+  left: 37%;
+  margin-left: -5rem;
+  margin-top: 2rem;
+  width: 32rem;
+  height: 100%;
+  overflow: visible;
+  display:none;
+}
+.psw {
+  position: relative;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%);
+  background: linear-gradient(to bottom, rgba(14, 135, 187, 0.8) 10%, rgba(255, 255, 100, 0.7) 100%);
+  
+}
+.passwordForm {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.addNewTenantForm {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  overflow :scroll;
+}
+.passwordRow {
+  height: 5rem;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.passwordInput {
+  display: inline-block;
+  width: 15rem;
+  height: 100%;
+  padding-left: 1.5rem;
+  font-size: 1.0rem;
+  background: transparent;
+  color: black;
+}
+.passwordSubmit {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  margin: 1.5rem  0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #FF3366;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.changePassword {
+  position: absolute;
+  top: 4rem;
+  left: 1.2rem;
+  width: 30rem;
+  height: 2.0rem;
+  font-size: 3.5rem;
+	font-family: Times New Roman;
+	text-align: center;
+  color:rgba(240, 230, 107, 0.8);
+  cursor: none;
+}
+.demoess {
+  position: absolute;
+  top: 2%;
+  left: 37%;
+  margin-left: -5rem;
+  margin-top: 2.5rem;
+  width: 32rem;
+  height: 34rem;
+  overflow: visible;
+  display:none;
+}
+.pay {
+  position: relative;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%);
+  background: linear-gradient(to bottom, rgba(14, 135, 187, 0.8) 10%, rgba(255, 255, 100, 0.7) 100%);
+  
+}
+.paymentForm {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 1.0rem 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.paymentRow {
+  height: 4rem;
+  padding-top: 1.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.paymentSubmit {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  margin: 1.0rem  0 2.2rem;
+  background: #FF3366;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.date__format
+{
+  color: black;
+  border: transparent;
+  background:transparent;
+  font-size: 2.1rem;
+}
+.levaDate {
+  position: absolute;
+  top: 4rem;
+  left: 1.2rem;
+  width: 30rem;
+  height: 2.0rem;
+  font-size: 3.0rem;
+	font-family: Times New Roman;
+	text-align: center;
+  color:rgba(240, 230, 107, 0.8);
+  cursor: none;
+}
+.utilitiessubmit {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  margin: 1rem 0 2.2rem;
+  background: #FF3366;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.demoUtilities {
+  position: absolute;
+  top: 57.5%;
+  left: 60%;
+  margin-left: -25rem;
+  margin-top: -24.5rem;
+  width: 40%;
+  height: 100%;
+display:none;
+}
+.utility {
+  position: relative;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(to bottom, rgba(14, 135, 187, 0.8) 10%, rgba(255, 255, 100, 0.7) 100%);
+}
+.utility__form {
+  position: absolute;
+  top: 6%;
+  left: 1%;
+  width: 98%;
+  height: 90%;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+}
+.utility__row {
+  height: 15%;
+  width:105%;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.3rem;
+}
+.house
+{
+  height: 40px;
+  position:absolute;
+  left:25%;
+  top:5%;
+  width:25%;
+ 
+}
+.rent
+{
+  height: 40px;
+  position:absolute;
+  left:45%;
+  top:5%;
+  width:25%;
+}
+.utility__input {
+  display: inline-block;
+  width: 22rem;
+  height: 100%;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  background: transparent;
+  color: black;
+}
+
+.add__utilities {
+	position: absolute;
+  top: 2rem;
+  left: 13rem;
+}
+.tenantdemo {
+  position: absolute;
+  top: 63%;
+  left: 60%;
+  margin-left: -25rem;
+  margin-top: -26.5rem;
+  width: 40%;
+  height: 100%;
+}
+.tenantsignUp {
+  position: relative;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(to bottom, rgba(14, 135, 187, 0.8) 10%, rgba(255, 255, 100, 0.7) 100%);
+}
+.tenanttenantSignUp__form {
+  position: absolute;
+  top: 14%;
+  left: 2%;
+  width: 98%;
+  height: 86%;
+  padding: 1.5rem 1.5rem;
+  text-align: left;
+  overflow: scroll;
+  font-size:15px;
+}
+
+.tenantSignUp__submit {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+  margin: 2rem 0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #FF3366;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.tenantcancel__submit {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  margin: 2rem 0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+  }
+
+.tenanthome__management {
+	position: absolute;
+  top: 2rem;
+  left: 7rem;
+  width: -7.0rem;
+  height: 2.8rem;
+	font-size: 3.2rem;
+	font-family: Times New Roman;
+	text-align: center;
+  color:rgba(240, 230, 107, 0.8);
+  cursor: none;
+}
+.tenantfName
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:4.1%;
+  width:25%;
+}
+.tenantlName
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:10.2%;
+  width:25%;
+}
+.tenantdob
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:16.5%;
+  width:25%;
+}
+.tenantgender
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:22.5%;
+  width:25%;
+}
+.tenantaddress
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:28%;
+  width:25%;
+}
+.tenantphoneNo
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:34.5%;
+  width:25%;
+}
+.tenantemail
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:40.5%;
+  width:25%;
+}
+.tenantNID
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:46.5%;
+  width:25%;
+}
+.tenantmember
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:52.5%;
+  width:25%;
+}
+.tenantbuildingName
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:58.5%;
+  width:25%;
+}
+.tenantflatNo
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:64.0%;
+  width:25%;
+}
+.tenantflatRent
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:70.2%;
+  width:25%;
+}
+.tenantstartDate
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:76.5%;
+  width:25%;
+}
+.tenantpayment
+{
+  height: 40px;
+  position:absolute;
+  left:47%;
+  top:83%;
+  width:25%;
+}
+.tenantimage
+{
+  position: absolute;
+  width:150px;
+  font-size: 17px;
+  background :transparent;
+  left:70%;
+  top:7px;
+  height:150px;
+}
+.submitForm
+{
+	display:none;
+	left:50%;
+}
+.logOut__submit {
+  position: absolute;
+  width: 100%;
+  height: 2.2rem;
+  margin: 0rem 0 0rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #0abab5;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.logOutbutton
+{
+	position:absolute;
+    top:-10%;
+	left:86%;
+    width:100%;
+}

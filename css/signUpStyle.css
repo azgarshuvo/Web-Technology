@@ -1,0 +1,116 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+  overflow: hidden;
+}
+input, button {
+  outline: none;
+  border: none;
+}
+.cont {
+  position: relative;
+  height: 100%;
+  top :-0.8rem;
+  background-image: url("Home.jpg");
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.demo {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  margin-left: -25rem;
+  margin-top: -26.5rem;
+  width: 50rem;
+  height: 100%;
+}
+.signUp {
+  position: relative;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(to bottom, rgba(14, 135, 187, 0.8) 10%, rgba(255, 255, 100, 0.7) 100%);
+}
+.tenantSignUp__form {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  width: 98%;
+  height: 90%;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  overflow: scroll;
+}
+.tenantSignUp__row {
+  height: 5rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.6rem;
+}
+.tenantSignUp__input {
+  display: inline-block;
+  width: 22rem;
+  height: 100%;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  background: transparent;
+  color: black;
+}
+.tenant_date
+{
+  color: black;
+  border: transparent;
+  background:transparent;
+  font-size: 2.1rem;
+}
+.securityquestion
+{
+  border: transparent;
+  color: black;
+  background:transparent;
+  font-size: 1.5rem;
+}
+.tenantSignUp__submit {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  margin: 2rem 0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #FF3366;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.cancel__submit {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  margin: 2rem 0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: red;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+  }
+
+.home__management {
+	position: absolute;
+  top: 2rem;
+  left: 12.5rem;
+  width: -7.0rem;
+  height: 2.8rem;
+	font-size: 3.2rem;
+	font-family: Times New Roman;
+	text-align: center;
+  color:rgba(240, 230, 107, 0.8);
+  cursor: none;
+}

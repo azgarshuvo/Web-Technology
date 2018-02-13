@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>AddNewAdmin</title>
+      <link rel="stylesheet" href="css/adminSignUpStyle.css">
+</head>
+<body>
+  <div class="cont">
+  <div class="demo">
+    <div class="signUp">
+      <div class="home__management">Add New Admin</div>
+      <div class="adminSignUp__form">
+	  <form action="getAdminSignUpInfo.php" method="post" name="frm" id="frm" enctype="multipart/form-data">
+        <div class="adminSignUp__row">
+          First Name :
+          <input type="text" class="adminSignUp__input name" placeholder="First Name" name="firstName" id="firstName" required/>
+        </div>
+        <div class="adminSignUp__row">
+          Last Name :
+          <input type="text" class="adminSignUp__input name" placeholder="Last Name" name="lastName" id="lastName" required/>
+        </div>
+        <div class="adminSignUp__row">
+          Date Of Birth :
+          <input type="date" class="adminDate" placeholder="Date Of Birth" name="dateOfBirth" id="dateOfBirth" required/>
+        </div>
+        <div class="adminSignUp__row">
+        Gender :
+        <input type="radio" name="gender" id="gender" value="male" checked/> Male
+        <input type="radio" name="gender" id="gender" value="female"/> Female
+        <input type="radio" name="gender" id="gender" value="other"/> Other
+        </div>
+        <div class="adminSignUp__row">
+        Select Your Photo :
+        <input type="file" name="adminPhoto" id="adminPhoto">
+        </div>
+        <div class="adminSignUp__row">
+          Address :
+          <input type="text" class="adminSignUp__input name" placeholder="Address" name="address" id="address" required/>
+        </div>
+        <div class="adminSignUp__row">
+          Phone Number :
+          <input type="number" class="adminSignUp__input name" placeholder="Phone Number" name="phoneNumber" id="phoneNumber" required/>
+        </div>
+        <div class="adminSignUp__row">
+          Email :
+          <input type="email" class="adminSignUp__input name" placeholder="example@exm.com" name="email" id="email" required/>
+        </div>
+        <div class="adminSignUp__row">
+          National ID :
+          <input type="number" class="adminSignUp__input name" placeholder="National ID" name="nationalId" id="nationalId" required/>
+        </div>
+        <div class="adminSignUp__row">
+           Your Bikash Number :
+          <input type="number" class="adminSignUp__input name" placeholder="bikash Number" name="bikashNumber" id="bikashNumber"/>
+        </div>
+       
+        <div class="adminSignUp__row">
+        Admin Position :
+        <select class="adminPosition" name="adminPosition" id="adminPosition">
+        <option value="Junior">JUNIOR</option>
+        <option value="Senior">SENIOR</option>
+        <option value="Top">TOP</option>
+        </select>
+        </div>
+        <input type="submit" class="adminSignUp__submit" value="Add New Admin" name="submit">
+        <button type="button" class="adminSignUp__submit">Cancel</button>
+      </div>
+	  </form>
+    </div>
+</body>
+</html>

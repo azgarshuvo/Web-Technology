@@ -1,0 +1,66 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+input, button {
+  outline: none;
+  border: none;
+}
+
+.signDemo {
+  position: absolute;
+  top: 2%;
+  left: 37%;
+  margin-left: -5rem;
+  margin-top: 2.5rem;
+  width: 32rem;
+  height: 34rem;
+  overflow: visible;
+  
+}
+.sign {
+  position: relative;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%);
+  background: linear-gradient(to bottom, rgba(14, 135, 187, 0.8) 10%, rgba(255, 255, 100, 0.7) 100%);
+  
+}
+.selectionForm {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 1.0rem 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.selectionSubmit {
+  position: relative;
+  width: 100%;
+  height: 1.5rem;
+  margin: 1.0rem  0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #FF3366;
+  font-size: 1.0rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.selection {
+  position: absolute;
+  top: 5rem;
+  left: 1.2rem;
+  width: 30rem;
+  height: 2.0rem;
+  font-size: 3.0rem;
+  font-family: Times New Roman;
+  text-align: center;
+  color:rgba(240, 230, 107, 0.8);
+  cursor: none;
+}

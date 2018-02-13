@@ -1,0 +1,72 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 95%;
+  height: 100%;
+  overflow: hidden;
+}
+.cont {
+  position: relative;
+  height: 100%;
+  background-image: url("Home.jpg");
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.text
+{
+  height: 40px;
+  position:absolute;
+  left:23%;
+  top:2%;
+  width:50%;
+  text-align:center;
+  font-size:20px;
+}
+table {
+    border-collapse:5px;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+th{
+  border: 2px solid black;
+}
+tr:nth-child(odd){background-color: #C4C162}
+tr:nth-child(even){background-color:#62C490}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.table__submit {
+  position: relative;
+  width: 13%;
+  height: 2.2rem;
+  margin: 2rem 0 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #0abab5;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.tablebutton
+{
+	position:absolute;
+    top:3%;
+	left:86%;
+    width:100%;
+}
+.tablePosition
+{
+  position: relative;
+  top:100px;
+}
